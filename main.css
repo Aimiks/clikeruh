@@ -1,0 +1,255 @@
+@keyframes shiney_button { from { left:-40px; } to { left:100%; }  }
+@keyframes shiney_bar { from { left:-80px } to { left:100%; }  }
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    /*background-image:  url("img/bg.png");
+    background-size: cover;*/
+    background: linear-gradient(217deg, rgba(86, 235, 255, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(71, 104, 252, 0.781), rgba(0,255,0,0) 35.71%),
+            linear-gradient(336deg, rgba(71, 104, 252, 0.781), rgba(0,0,255,0) 35.71%),
+            linear-gradient(397deg, rgba(86, 235, 255, 0.8), rgba(255,255,0,0) 70.71%);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#globalContainer {
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+#gameContainer {
+    width: 1280px;
+    border: 10px ridge rgba(88, 39, 11, 0.6);
+    border-radius: 20px;
+    margin: auto;
+    height: 820px;
+    box-shadow: 0px 0px 50px 5px rgba(255, 255, 255, 0.4);
+    background-color: rgb(51, 30, 10);
+}
+#infoBar {
+    height: 15%;
+    border-radius: 10px;
+    margin: 15px;
+    border: 10px ridge rgba(88, 39, 11, 0.6);
+    background-color: rgba(126, 94, 25, 0.842);
+}
+#infoBar input {
+    background-color: rgba(0,0,0,0);
+}
+#stabilityContainer {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.stabLabel {
+    width: 100%;
+}
+#stabilityBar {
+    height: 40px;
+    width: 600px;
+    display: flex;
+}
+#stabilityBar .stabBgBar {
+    background-color: chartreuse;
+    height: 100%;
+    width: 100%;
+}
+#stabilityBar .instabBgBar {
+    background-color: rgb(255, 0, 0);
+    height: 100%;
+    width: 100%;
+}
+
+#generatorBar {
+    margin: 30px 15px 15px 15px;
+    padding: 10px;
+    height: 78%;
+    border: 10px ridge rgba(88, 39, 11, 0.6);
+    background-color: rgba(126, 94, 25, 0.842);
+    display: flex;
+    justify-content: space-around;
+}
+#statisfactionNb {
+    color: rgb(255, 174, 0);
+}
+:focus {
+    outline: 0;
+}
+button {
+    cursor: pointer;
+    overflow: hidden;
+}
+.col {
+    width: 45%;
+}
+.generator {
+    margin-bottom: 10px;
+    height: 75px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border: 5px ridge rgb(119, 42, 18);
+    background: linear-gradient(217deg, rgba(253, 255, 114, 0.4), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(251, 255, 0, 0.3), rgba(0,255,0,0) 70.71%),
+    linear-gradient(0deg, rgba(56, 32, 12, 0.8), rgba(0,0,255,0) 70.71%);
+}
+.generator.locked {
+    color: white;
+}
+.generator.locked::after {
+    position: absolute;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 5;
+    content: 'Locked';
+    text-align: center;
+    background: rgb(0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generator .ico {
+    width: 20%;
+    flex: 0 1 20%;
+    border-right: 2px solid black;
+    background-color: rgb(64, 59, 85);
+
+}
+.generator .main {
+    width: 80%;
+    flex: 0 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .generatorBarContainer {
+    flex : 1 0 100%;
+    position: relative;
+    height: 50%;
+}
+
+.bgBar {
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    content: '';
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 0, 106, 0.8), rgba(0, 4, 255, 0.3));
+    transition: width .1s ease-in;
+    overflow: hidden;
+}
+.bgBar::after {
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    content:'';
+    top:0;
+    background-image: linear-gradient(to right, rgba(146, 255, 96, 0) 20%, rgba(219, 92, 119, 0.5) 60%, rgba(255, 245, 152, 0) 100%);
+    animation: 3s linear 0s infinite running shiney_bar;
+}
+.generatorName {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.generatorName span {
+    font-weight: bold;
+}
+
+.main .interactifsContainer {
+    flex : 1 0 100%;
+    display: flex;
+    height: 50%;
+}
+
+.upgrade {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    flex: 0 1 70%;
+    align-content: center;
+}
+.upgrade button {
+    flex: 0 0 auto;
+    width: 23%;
+    height: 80%;
+    border: 1px solid salmon;
+    background-color: rgb(117, 38, 29);
+    border-radius: 5px;
+    transition: all .1s ease;
+}
+.upgrade button:enabled:hover {
+    filter: brightness(130%);
+}
+.upgrade button.unlocked[data-type="auto"] {
+    background-color: rgb(47, 128, 0);
+    border: 2px solid rgb(30, 73, 5);
+    position: relative;
+}
+.upgrade button.unlocked.active[data-type="auto"]::after {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    content:'';
+    top:0;
+    background-image: linear-gradient(to right, rgba(146, 255, 96, 0) 20%, rgba(132, 177, 118, 0.7) 60%, rgba(255, 245, 152, 0) 100%);
+    animation: 3s ease-in 0s infinite running shiney_button;
+}
+.upgrade button.locked {
+    background-color: rgb(68, 95, 51);
+    border: 2px solid rgb(55, 73, 44);
+    position: relative;
+}
+.upgrade button.locked:disabled {
+    cursor: initial;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.main .generatorButtonContainer {
+    width: 30%;
+    flex: 0 1 30%;
+    border-left: 2px solid black;
+}
+
+.generatorButton {
+    letter-spacing: 2px;
+    width: 100%;
+    height: 100%;
+    border:none;
+    color: white;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(251, 255, 0, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    transition: all .1s ease;
+}
+.generatorButton:hover {
+    filter:brightness(70%);
+}
+
+
+
+
+

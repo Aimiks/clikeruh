@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Satisfaction clicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="globalContainer">
+        <div id="gameContainer">
+            <div id="infoBar">
+                <div>
+                    <label>Satisfaction : </label><input type="numeric" disabled id="statisfactionNb" value="0">
+                    <button id="p100">+100</button>
+                    <button id="m100">-100</button>
+                    <div id="stabilityContainer">
+                        <div class="stabLabel">
+                            <span>Stabilité</span>
+                        </div>
+                        <div id="stabilityBar">
+                            <div class="stabBgBar"></div>
+                            <div class="instabBgBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="generatorBar">
+                <div class="col">
+                   
+                </div>
+                <div class="col">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
