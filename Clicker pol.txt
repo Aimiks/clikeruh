@@ -1,0 +1,64 @@
+Satisfaction clicker
+
+- But : 
+	- avoir le + de points de satisfaction / folie
+	- Pour ???
+
+La satisfaction possède plusieurs palliers permettant d'avoir de nouvelles possibilité de générer de la satisfaction
+Barre de stabilité :
+	- De base à 100%
+	- Elle diminue à cause de certains générateurs/upgrades en % de la satisfaction généré
+	- Elle remonte grâce en % de la satisfaction généré
+		=> Si le plus gros générateur génère de l'instabilité -> il va devenir instable
+Instable :
+	- Être instable empêche la généréation d'instabilité jusqu'à que la stabilité arrive à 0;
+	- Freeze des générateurs randoms pdt X sec
+	- Transforme des générateurs dégénérateurs
+		- génère la satisfaction en négatif
+
+Comment être fou :
+	- Avoir 0 de satisfaction
+	- être instable
+
+être fou :
+	- Remplace la satisfaction en folie
+	- Débloque les générateurs de folie
+
+# Générateur de satisfaction
+
+(*) = contrepartie : génère bcp de satisfaction mais génère de l'instabilité
+
+1 - Se lever à 12h
+2 - Manger un bol de cereal
+3 - Regarder One Piece
+4 - Jouer à minecraft
+5 - Manger un botan avec son BFF
+5* - Manger un botan solo
+6 - Jouer au café des jeux
+7 - Jouer à isaac
+8* - Recevoir une réponse positive de pole emploi
+9* - Jouer à un clicker
+10* - Jouer au jeux de sociétés avec son frère
+11* - Jouer Shaco sur lol
+12(R) - Faire un laser game
+13(R) - Faire une gamejam
+14(R) - Regarder mystère à truc
+
+# Générateur de folies
+
+(*) = contrepartie : ?????
+
+-14(R) - Faire une sortie scout
+-13(R) - Prendre le train pendant la grève 
+-12(R) - Débattre du racisme anti-blanc avec Obride
+-11 - Faire un projet avec B*****
+-10 - Aller à l'opéra avec ses parents
+-9* - Int sur LoL
+-8* - Faire une soirée avec ses potes de lycées
+-7 - Tryhard les duoq avec Ben sur lol
+-6 - Regarder des animes en vostfr
+-5 - Faire une soirée avec la wednesday team
+-4 - Aider ses potes en maths
+-3 - Réviser l'UML
+-2 - Aller en cours d'Hamont la pute
+-1 - Dormir 4h par nuit
